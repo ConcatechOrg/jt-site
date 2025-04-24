@@ -5,6 +5,7 @@ import CommoditiesSliver from "../components/CommoditiesSliver";
 import ContactUs from "../components/ContactUs";
 import FaqSection from "../components/Faq";
 import Hero from "../components/Hero";
+import OpeningHours from "../components/OpeningHours";
 import PartnerCountries from "../components/PartnerCountries";
 import SliverCard from "../components/SliverCard";
 import WhatsappButton from "../components/WhatsappButton";
@@ -32,8 +33,11 @@ const Home = () => {
         <div>
           <FaqSection />
         </div>
-        <div>
+        <div className="pb-[2rem]">
           <ContactUs  />
+        </div>
+        <div>
+          <OpeningHours />
         </div>
       </section>
     </>
