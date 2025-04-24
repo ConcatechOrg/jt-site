@@ -21,9 +21,7 @@ const FaqItem = ({ question, answer }: Props) => {
           <h3 className="font-bai font-regular text-shoulders-20-400">
             {question}
           </h3>
-          <p className="font-shoulders text-shoulders-20-400 text-left">
-            Supporting line text lorem ipsum dolor sit amet, consectetur.
-          </p>
+          
         </div>
         <ChevronRightIcon
           className={`w-5 h-5 text-navy transform transition-transform duration-300 ${

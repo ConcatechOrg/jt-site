@@ -1,28 +1,28 @@
+import { useLanguage } from "../context/useLanguage";
 import FaqItem from "./FaqItem";
 
-const faqData = [
-  {
-    question: "List item",
-    answer:
-      "This is the expanded answer to the question. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    question: "List item",
-    answer:
-      "Another answer explaining in more detail what was asked in the question.",
-  },
-  {
-    question: "List item",
-    answer:
-      "Here goes the explanation of the FAQ item. You can expand or collapse it as needed.",
-  },
-];
-
 const FaqSection = () => {
+  const { translations } = useLanguage();
+
+  const faqData = [
+    {
+      question: translations.faq_question_1,
+      answer: translations.faq_answer_1,
+    },
+    {
+      question: translations.faq_question_2,
+      answer: translations.faq_answer_2,
+    },
+    {
+      question: translations.faq_question_3,
+      answer: translations.faq_answer_3,
+    },
+  ];
+
   return (
-    <section id="faq" className=" px-4 ">
+    <section id="faq" className="px-4">
       <h2 className="font-bai font-semibold text-bai-24-600 pb-[1.5rem]">
-        Frequently asked questions
+        {translations.faq_title}
       </h2>
       <div className="space-y-4">
         {faqData.map((faq, index) => (

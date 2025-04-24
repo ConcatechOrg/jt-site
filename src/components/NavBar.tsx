@@ -1,13 +1,17 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FiX } from "react-icons/fi";
+import { useLanguage } from "../context/useLanguage";
+
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-
+  const languageMenuRef = useRef<HTMLDivElement>(null);
+  const { changeLanguage } = useLanguage();
+  const { translations } = useLanguage();
   // Detecta se a rota é /contato
   const isContatoPage = location.pathname === "/contato";
 
@@ -21,7 +25,22 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos]);
+  const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        languageMenuRef.current &&
+        !languageMenuRef.current.contains(event.target as Node)
+      ) {
+        setIsLanguageOpen(false);
+      }
+    };
 
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
   return (
     <nav
       className={`pt-[4vw] md:pt-[1.5vw] absolute top-0 left-0 w-full transition-transform duration-300 ${
@@ -39,33 +58,69 @@ const Navbar = () => {
 
         {/* LINKS - DESKTOP */}
         <div className="hidden md:flex items-center space-x-6">
-          <Link to="/home" className="inline-block">
-            <img
-              src="/assets/language-icon.svg"
-              alt="Idioma"
-              className="w-6 h-6"
-            />
-          </Link>
+          <div className="relative" ref={languageMenuRef}>
+            <button
+              onClick={() => setIsLanguageOpen(!isLanguageOpen)}
+              className="inline-block"
+            >
+              <img
+                src="/assets/language-icon.svg"
+                alt="Idioma"
+                className="w-6 h-6"
+              />
+            </button>
+
+            {isLanguageOpen && (
+              <div className="absolute right-0 mt-2 bg-white text-black shadow-lg rounded-md z-50 w-40">
+                <ul className="flex flex-col divide-y divide-gray-200">
+                  <li
+                    className="px-4 py-2 hover:bg-gray-100 flex items-center gap-2 cursor-pointer"
+                    onClick={() => {
+                      changeLanguage("FR");
+                      setIsLanguageOpen(false);
+                    }}
+                  >
+                    🇫🇷 Français
+                  </li>
+                  <li
+                    className="px-4 py-2 hover:bg-gray-100 flex items-center gap-2 cursor-pointer"
+                    onClick={() => {
+                      changeLanguage("EN");
+                      setIsLanguageOpen(false);
+                    }}
+                  >
+                    🇬🇧 English
+                  </li>
+                  <li
+                    className="px-4 py-2 hover:bg-gray-100 flex items-center gap-2 cursor-pointer"
+                    onClick={() => {
+                      changeLanguage("ES");
+                      setIsLanguageOpen(false);
+                    }}
+                  >
+                    🇪🇸 Español
+                  </li>
+                </ul>
+              </div>
+            )}
+          </div>
           <Link
-            to="/"
-            state={{ scrollTo: "commodities" }}
+            to="/home#commodities"
             className="font-bai font-medium text-bai-base text-gold"
           >
-            Commodities
+            {translations.nav_commodities}
           </Link>
           <Link
-            to="/"
-            state={{ scrollTo: "contact" }}
+            to="/home#contact"
             className="font-bai font-medium text-bai-base text-gold"
           >
-            Conect Us
+            {translations.nav_contact}
           </Link>
           <Link
-            to="/"
-            state={{ scrollTo: "faq" }}
+            to="/home#faq"
             className="font-bai font-medium text-bai-base text-gold"
           >
-            FAQ
+            {translations.nav_faq}
           </Link>
         </div>
 

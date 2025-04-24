@@ -1,8 +1,11 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { useLanguage } from "../context/useLanguage";
 
 const CommoditiesSliver = () => {
+  const { translations } = useLanguage();
   const scrollRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
 
   const scrollLeft = () => {
     scrollRef.current?.scrollBy({ left: -250, behavior: "smooth" });
@@ -12,43 +15,37 @@ const CommoditiesSliver = () => {
     scrollRef.current?.scrollBy({ left: 250, behavior: "smooth" });
   };
 
-
   const commodities = [
     {
       slug: "agricola",
-      title: "Eco-Friendly Design",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+      title: translations.commodities_agricola_title,
+      description: translations.commodities_agricola_description,
       image: "/assets/acricola-card-image.png",
     },
     {
       slug: "energy",
-      title: "24/7 Support",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+      title: translations.commodities_energy_title,
+      description: translations.commodities_energy_description,
       image: "/assets/energy-card-image.png",
     },
     {
       slug: "meat",
-      title: "Multilingual Functionality",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+      title: translations.commodities_meat_title,
+      description: translations.commodities_meat_description,
       image: "/assets/meat-card-image.png",
     },
     {
       slug: "ores",
-      title: "Advanced Tech",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+      title: translations.commodities_ores_title,
+      description: translations.commodities_ores_description,
       image: "/assets/ore-card-image.png",
     },
   ];
-  const navigate = useNavigate();
 
   return (
-    <section id="commodities" className=" py-[50px]">
+    <section id="commodities" className="py-[50px]">
       <h2 className="pl-4 pb-[2.5rem] font-bai font-semibold text-bai-24-600 text-left">
-        Commodities
+        {translations.commodities_section_title}
       </h2>
       <div className="flex flex-col items-center justify-center relative w-full px-4">
         <div
@@ -66,7 +63,7 @@ const CommoditiesSliver = () => {
                 className="w-full h-[180px] object-cover rounded-[8px]"
               />
               <div className="p-4">
-                <h3 className="text-bai-base  mt-3 font-shoulders font-medium text-darkBlue pb-[2rem]">
+                <h3 className="text-bai-base mt-3 font-shoulders font-medium text-darkBlue pb-[2rem]">
                   {item.title}
                 </h3>
                 <p className="text-bai-base font-shoulders font-regular text-darkBlue pb-[2rem]">
@@ -74,8 +71,11 @@ const CommoditiesSliver = () => {
                 </p>
               </div>
               <div className="flex justify-end mb-4 mr-4">
-                <button onClick={() => navigate(`/commodity/${item.slug}`)} className="flex items-center justify-center  px-[0.9375rem] py-[0.5rem] gap-[0.625rem] rounded-[0.5rem] bg-navy text-softWhite font-shoulders font-meidum text-shoulders-16-400">
-                  show products
+                <button
+                  onClick={() => navigate(`/commodity/${item.slug}`)}
+                  className="flex items-center justify-center px-[0.9375rem] py-[0.5rem] gap-[0.625rem] rounded-[0.5rem] bg-navy text-softWhite font-shoulders font-meidum text-shoulders-16-400"
+                >
+                  {translations.commodities_button}
                 </button>
               </div>
             </div>
