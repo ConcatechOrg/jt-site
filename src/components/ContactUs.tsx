@@ -1,6 +1,10 @@
 import { useState } from "react";
 
-const ContactUs = () => {
+type ContactUsProps = {
+  imageName: string;
+  useBlueBackground?: boolean;
+};
+const ContactUs = ({ imageName, useBlueBackground = true }: ContactUsProps) => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
   const handleChange = (
@@ -12,22 +16,29 @@ const ContactUs = () => {
   const handleClear = (field: string) => {
     setForm({ ...form, [field]: "" });
   };
+  const containerClasses = `
+    ${useBlueBackground ? "bg-blueSoft text-white" : "bg-white text-void"}
+    rounded-[20px] w-full mx-auto mt-12
+  `;
+  const inputClass = useBlueBackground
+    ? "border-white placeholder-white/60 text-white border"
+    : "border-darkBlue placeholder-darkBlue text-darkBlue border-2";
 
   return (
-    <section className="bg-blueSoft text-white rounded-[20px] w-full mx-auto mt-12">
+    <section id="contact" className={containerClasses}>
       <div className="flex flex-col md:flex-row justify-between items-start gap-8 p-8 w-full">
         {/* Formulário */}
         <div className="flex-1 w-full">
-          <h2 className="font-bai font-semibold text-bai-24-600 text-white">
+          <h2 className="font-bai font-semibold text-bai-24-600 text-white pb-[1.5rem]">
             Contact Us
           </h2>
 
           <div className="space-y-6 mt-4">
             {/* Campo Name */}
-            <div className="relative w-full">
+            <div className="relative w-full pb-[2.5rem]">
               <label
                 htmlFor="name"
-                className="absolute -top-3 left-3 text-sm bg-blueSoft px-1"
+                className="absolute -top-5 left-3 text-sm  px-1"
               >
                 Name
               </label>
@@ -37,7 +48,7 @@ const ContactUs = () => {
                 placeholder="personal or company"
                 value={form.name}
                 onChange={handleChange}
-                className="w-full bg-transparent border border-white rounded-md px-4 py-3 pr-10 placeholder-white/60"
+                className={`w-full bg-transparent rounded-md px-4 py-3 pr-10 ${inputClass}`}
               />
               {form.name && (
                 <button
@@ -50,10 +61,10 @@ const ContactUs = () => {
             </div>
 
             {/* Campo Email */}
-            <div className="relative w-full">
+            <div className="relative w-full pb-[2.5rem]">
               <label
                 htmlFor="email"
-                className="absolute -top-3 left-3 text-sm bg-blueSoft px-1"
+                className="absolute -top-5 left-3 text-sm  px-1  "
               >
                 E-mail
               </label>
@@ -63,7 +74,7 @@ const ContactUs = () => {
                 placeholder="youremail@"
                 value={form.email}
                 onChange={handleChange}
-                className="w-full bg-transparent border border-white rounded-md px-4 py-3 pr-10 placeholder-white/60"
+                className={`w-full bg-transparent rounded-md px-4 py-3 pr-10 ${inputClass}`}
               />
               {form.email && (
                 <button
@@ -79,7 +90,7 @@ const ContactUs = () => {
             <div className="relative w-full">
               <label
                 htmlFor="message"
-                className="absolute -top-3 left-3 text-sm bg-blueSoft px-1"
+                className="absolute -top-5 left-3 text-sm  px-1"
               >
                 Message
               </label>
@@ -88,7 +99,7 @@ const ContactUs = () => {
                 placeholder="Hi, I need help with..."
                 value={form.message}
                 onChange={handleChange}
-                className="w-full bg-transparent border border-white rounded-md px-4 py-3 pr-10 placeholder-white/60"
+                className={`w-full bg-transparent rounded-md px-4 py-3 pr-10 ${inputClass}`}
               />
               {form.message && (
                 <button
@@ -111,8 +122,8 @@ const ContactUs = () => {
         {/* Imagem */}
         <div className="h-[25.875rem] w-full md:w-[28rem] rounded-[10px] overflow-hidden">
           <img
-            src="/assets/contact-image.jpg"
-            alt="Commodities"
+            src={`${imageName}`}
+            alt={imageName}
             className="w-full h-full object-cover"
           />
         </div>

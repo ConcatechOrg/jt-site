@@ -20,7 +20,7 @@ const faqData = [
 
 const FaqSection = () => {
   return (
-    <section className=" px-4 ">
+    <section id="faq" className=" px-4 ">
       <h2 className="font-bai font-semibold text-bai-24-600 pb-[1.5rem]">
         Frequently asked questions
       </h2>

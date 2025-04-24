@@ -9,8 +9,20 @@ import OpeningHours from "../components/OpeningHours";
 import PartnerCountries from "../components/PartnerCountries";
 import SliverCard from "../components/SliverCard";
 import WhatsappButton from "../components/WhatsappButton";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Home = () => {
+  const location = useLocation();
+
+useEffect(() => {
+  if (location.state?.scrollTo) {
+    const section = document.getElementById(location.state.scrollTo);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+}, [location]);
   return (
     <>
       <section className="bg-white">
@@ -34,7 +46,7 @@ const Home = () => {
           <FaqSection />
         </div>
         <div className="pb-[2rem]">
-          <ContactUs  />
+          <ContactUs imageName="assets/image-all-commodities.png" useBlueBackground={true} />
         </div>
         <div>
           <OpeningHours />

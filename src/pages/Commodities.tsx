@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useCommodities } from "../context/CommoditiesProvider";
 import WhatsappButton from "../components/WhatsappButton";
+import ContactUs from "../components/ContactUs";
 
 const Commodities = () => {
   const { slug } = useParams();
@@ -62,6 +63,7 @@ const Commodities = () => {
         <div className="flex justify-center">
           <WhatsappButton />
         </div>
+        <ContactUs imageName={commodity.imageCard} useBlueBackground={false} />
       </div>
     </section>
   );

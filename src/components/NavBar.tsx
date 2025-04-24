@@ -28,7 +28,7 @@ const Navbar = () => {
         isVisible ? "translate-y-0" : "-translate-y-full"
       } bg-transparent z-50`}
     >
-      <div className="flex justify-between items-center mx-[4vw] ">     
+      <div className="flex justify-between items-center mx-[4vw] ">
         <Link to="/" className="text-2xl font-bold inline-block">
           <img
             src="/assets/logo.avif"
@@ -47,19 +47,22 @@ const Navbar = () => {
             />
           </Link>
           <Link
-            to="/commodities"
+            to="/"
+            state={{ scrollTo: "commodities" }}
             className="font-bai font-medium text-bai-base text-gold"
           >
             Commodities
           </Link>
           <Link
-            to="/home#sobre"
+            to="/"
+            state={{ scrollTo: "contact" }}
             className="font-bai font-medium text-bai-base text-gold"
           >
             Conect Us
           </Link>
           <Link
-            to="/home#projetos"
+            to="/"
+            state={{ scrollTo: "faq" }}
             className="font-bai font-medium text-bai-base text-gold"
           >
             FAQ
