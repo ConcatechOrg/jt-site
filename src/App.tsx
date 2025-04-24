@@ -3,10 +3,12 @@ import { BrowserRouter } from "react-router-dom";
 import { LanguageProvider } from "./context/LanguageProvider";
 import AppRoutes from "./routes";
 import Navbar from "./components/NavBar";
+import { CommoditiesProvider } from "./context/CommoditiesProvider";
 
 const App = () => {
   return (
     <LanguageProvider>
+      <CommoditiesProvider>
       <BrowserRouter>
         <Helmet>
           <title>MG</title>
@@ -15,6 +17,7 @@ const App = () => {
         <Navbar />
         <AppRoutes />
       </BrowserRouter>
+      </CommoditiesProvider>
     </LanguageProvider>
   );
 };

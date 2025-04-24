@@ -47,7 +47,7 @@ const Navbar = () => {
             />
           </Link>
           <Link
-            to="/home"
+            to="/commodities"
             className="font-bai font-medium text-bai-base text-gold"
           >
             Commodities

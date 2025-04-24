@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 const CommoditiesSliver = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -11,32 +12,38 @@ const CommoditiesSliver = () => {
     scrollRef.current?.scrollBy({ left: 250, behavior: "smooth" });
   };
 
+
   const commodities = [
     {
+      slug: "agricola",
       title: "Eco-Friendly Design",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-      image: "/assets/chicken-paw.jpg",
+      image: "/assets/acricola-card-image.png",
     },
     {
+      slug: "energy",
       title: "24/7 Support",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-      image: "/assets/aluminum.jpg",
+      image: "/assets/energy-card-image.png",
     },
     {
+      slug: "meat",
       title: "Multilingual Functionality",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-      image: "/assets/soybeans.jpg",
+      image: "/assets/meat-card-image.png",
     },
     {
+      slug: "ores",
       title: "Advanced Tech",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-      image: "/assets/sugar.jpg",
+      image: "/assets/ore-card-image.png",
     },
   ];
+  const navigate = useNavigate();
 
   return (
     <section id="commodities" className=" py-[50px]">
@@ -67,7 +74,7 @@ const CommoditiesSliver = () => {
                 </p>
               </div>
               <div className="flex justify-end mb-4 mr-4">
-                <button className="flex items-center justify-center  px-[0.9375rem] py-[0.5rem] gap-[0.625rem] rounded-[0.5rem] bg-navy text-softWhite font-shoulders font-meidum text-shoulders-16-400">
+                <button onClick={() => navigate(`/commodity/${item.slug}`)} className="flex items-center justify-center  px-[0.9375rem] py-[0.5rem] gap-[0.625rem] rounded-[0.5rem] bg-navy text-softWhite font-shoulders font-meidum text-shoulders-16-400">
                   show products
                 </button>
               </div>
