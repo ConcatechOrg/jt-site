@@ -25,7 +25,7 @@ useEffect(() => {
 }, [location]);
   return (
     <>
-      <section className="bg-white">
+      <section className="bg-softWhite">
         <Hero />
         <div className="flex justify-center items-center py-8">
           <WhatsappButton />
@@ -36,7 +36,7 @@ useEffect(() => {
         <div>
           <BussinessImage />
         </div>
-        <div className="pb-[5.56rem]">
+        <div className="pb-[0.5rem] md:pb-[5.56rem]">
           <CommoditiesSliver />
         </div>
         <div>

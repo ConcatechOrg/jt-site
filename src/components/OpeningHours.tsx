@@ -15,7 +15,7 @@ const OpeningHours = () => {
           <p>{translations.opening_saturday}</p>
         </div>
 
-        <div className="mt-6 mb-4">
+        <div className="mt-6 mb-4 flex justify-center">
           <WhatsappButton />
         </div>
       </div>
