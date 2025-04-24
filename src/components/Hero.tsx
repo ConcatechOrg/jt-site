@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section id="hero">
       <div
-        className="relative bg-cover bg-center w-full aspect-[509/177]"
+        className="relative bg-cover bg-center w-full aspect-[209/197]  md:aspect-[509/177]"
         style={{
           backgroundImage: `url('/assets/home-bg.jpg')`,
         }}
