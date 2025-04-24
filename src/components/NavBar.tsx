@@ -26,10 +26,9 @@ const Navbar = () => {
     <nav
       className={`pt-[4vw] md:pt-[1.5vw] absolute top-0 left-0 w-full transition-transform duration-300 ${
         isVisible ? "translate-y-0" : "-translate-y-full"
-      } bg-opulent z-50`}
+      } bg-transparent z-50`}
     >
-      <div className="flex justify-between items-center md:max-w-[1370px] md:mx-auto mx-[4vw] md:px-[3vw]">
-        {/* LOGO */}
+      <div className="flex justify-between items-center mx-[4vw] ">     
         <Link to="/" className="text-2xl font-bold inline-block">
           <img
             src="/assets/logo.avif"

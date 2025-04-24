@@ -3,8 +3,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
-      gold: "#D4AF37",
+      gold: "#D4AF37",      
       navy: "#003366",
+      darkBlue:"#012141",
       blueSoft: "#385D84",
       softWhite: "#F1F2FF",
       dark: "#1E1E1E",
@@ -20,8 +21,8 @@ module.exports = {
       fontSize: {
         // Bai Jamjuree
         'bai-base': ['1rem', { lineHeight: '1', letterSpacing: '0%' }], // 16px 100%
-        'bai-36-400': ['2.25rem', { lineHeight: '15px', letterSpacing: '1%' }], // 36px weight 400
-        'bai-36-600': ['2.25rem', { lineHeight: '15px', letterSpacing: '1%' }], // 36px weight 600
+        'bai-36-400': ['2.25rem', { lineHeight: '2rem', letterSpacing: '1%' }], // 36px weight 400
+        'bai-36-600': ['2.25rem', { lineHeight: '2.2rem', letterSpacing: '1%' }], // 36px weight 600
         'bai-24-400': ['1.5rem', { lineHeight: '1.5rem', letterSpacing: '0%' }],
         'bai-24-600': ['1.5rem', { lineHeight: '1.5rem', letterSpacing: '0%' }],
         'bai-title-md': ['1.39375rem', { lineHeight: '2.09125rem', letterSpacing: '0.013125rem' }], // 22.3px
