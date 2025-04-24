@@ -4,19 +4,21 @@ import { LanguageProvider } from "./context/LanguageProvider";
 import AppRoutes from "./routes";
 import Navbar from "./components/NavBar";
 import { CommoditiesProvider } from "./context/CommoditiesProvider";
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   return (
     <LanguageProvider>
       <CommoditiesProvider>
-      <BrowserRouter>
-        <Helmet>
-          <title>MG</title>
-          <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-        </Helmet>
-        <Navbar />
-        <AppRoutes />
-      </BrowserRouter>
+        <BrowserRouter>
+          <Helmet>
+            <title>J&T</title>
+            <link rel="icon" type="image/svg+xml" href="/logo.png" />
+          </Helmet>
+          <Navbar />
+          <AppRoutes />
+        </BrowserRouter>
+        <ToastContainer />
       </CommoditiesProvider>
     </LanguageProvider>
   );
