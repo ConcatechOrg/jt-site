@@ -6,6 +6,7 @@ module.exports = {
       gold: "#D4AF37",      
       navy: "#003366",
       darkBlue:"#012141",
+      lightBlue: "#DFE3F3",
       blueSoft: "#385D84",
       softWhite: "#F1F2FF",
       dark: "#1E1E1E",

@@ -2,6 +2,8 @@
 
 import BussinessImage from "../components/BussinessImage";
 import CommoditiesSliver from "../components/CommoditiesSliver";
+import ContactUs from "../components/ContactUs";
+import FaqSection from "../components/Faq";
 import Hero from "../components/Hero";
 import PartnerCountries from "../components/PartnerCountries";
 import SliverCard from "../components/SliverCard";
@@ -26,6 +28,12 @@ const Home = () => {
         </div>
         <div>
           <PartnerCountries />
+        </div>
+        <div>
+          <FaqSection />
+        </div>
+        <div>
+          <ContactUs  />
         </div>
       </section>
     </>

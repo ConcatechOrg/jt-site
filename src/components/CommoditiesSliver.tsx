@@ -1,6 +1,5 @@
 import { useRef } from "react";
 
-
 const CommoditiesSliver = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -23,19 +22,19 @@ const CommoditiesSliver = () => {
       title: "24/7 Support",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-      image: "/assets/chicken-paw.jpg",
+      image: "/assets/aluminum.jpg",
     },
     {
       title: "Multilingual Functionality",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-      image: "/assets/chicken-paw.jpg",
+      image: "/assets/soybeans.jpg",
     },
     {
       title: "Advanced Tech",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-      image: "/assets/chicken-paw.jpg",
+      image: "/assets/sugar.jpg",
     },
   ];
 
@@ -59,34 +58,36 @@ const CommoditiesSliver = () => {
                 alt={item.title}
                 className="w-full h-[180px] object-cover rounded-[8px]"
               />
-             <div className="p-4">
-             <h3 className="text-bai-base  mt-3 font-shoulders font-medium text-darkBlue pb-[2rem]">
-                {item.title}
-              </h3>
-              <p className="text-bai-base font-shoulders font-regular text-darkBlue pb-[2rem]">
-                {item.description}
-              </p>
-             </div>
-             <div className="flex justify-end mb-4 mr-4">
-             <button className="flex items-center justify-center  px-[0.9375rem] py-[0.5rem] gap-[0.625rem] rounded-[0.5rem] bg-navy text-softWhite font-shoulders font-meidum text-shoulders-16-400">show products</button>
-             </div>
+              <div className="p-4">
+                <h3 className="text-bai-base  mt-3 font-shoulders font-medium text-darkBlue pb-[2rem]">
+                  {item.title}
+                </h3>
+                <p className="text-bai-base font-shoulders font-regular text-darkBlue pb-[2rem]">
+                  {item.description}
+                </p>
+              </div>
+              <div className="flex justify-end mb-4 mr-4">
+                <button className="flex items-center justify-center  px-[0.9375rem] py-[0.5rem] gap-[0.625rem] rounded-[0.5rem] bg-navy text-softWhite font-shoulders font-meidum text-shoulders-16-400">
+                  show products
+                </button>
+              </div>
             </div>
           ))}
         </div>
 
         <div className="flex justify-center gap-4 mt-6">
-      <button
-        className="w-8 h-8 rounded-full bg-navy text-white flex items-center justify-center shadow"
-        onClick={scrollLeft}
-      >
-        &lt;
-      </button>
-      <button
-        className="w-8 h-8 rounded-full bg-navy text-white flex items-center justify-center shadow"
-        onClick={scrollRight}
-      >
-        &gt;
-      </button>
+          <button
+            className="w-8 h-8 rounded-full bg-navy text-white flex items-center justify-center shadow"
+            onClick={scrollLeft}
+          >
+            &lt;
+          </button>
+          <button
+            className="w-8 h-8 rounded-full bg-navy text-white flex items-center justify-center shadow"
+            onClick={scrollRight}
+          >
+            &gt;
+          </button>
         </div>
       </div>
     </section>

@@ -14,19 +14,19 @@ const PartnerCountries = () => {
         title: "México",
         description:
           "beans, corn, and avocados",
-        image: "/assets/chicken-paw.jpg",
+        image: "/assets/aluminum.jpg",
       },
       {
         title: "China",
         description:
           "rice, soybeans, corn, and chicken",
-        image: "/assets/chicken-paw.jpg",
+        image: "/assets/soybeans.jpg",
       },
       {
         title: "Vietnam",
         description:
           "rice, soybeans, corn, and chicken",
-        image: "/assets/chicken-paw.jpg",
+        image: "/assets/sugar.jpg",
       },
   ];
 
