@@ -59,7 +59,7 @@ const ContactUs = ({ imageName, useBlueBackground = true }: ContactUsProps) => {
   };
 
   const containerClasses = `
-    ${useBlueBackground ? "bg-blueSoft text-white" : "bg-white text-void"}
+    ${useBlueBackground ? "bg-blueSoft text-white" : "bg-whiteSoft text-void"}
     rounded-[20px] w-full mx-auto mt-12
   `;
   const inputClass = useBlueBackground

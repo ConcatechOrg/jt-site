@@ -100,6 +100,86 @@ export const translations = {
     opening_title: "Opening hours",
     opening_weekdays: "Mon - Fri: 8:00 am / 6:00 pm",
     opening_saturday: "Saturday: 9:00 am / 7:00 pm",
+
+
+    commodities: [
+      {
+        slug: "agricola",
+        title: "Sugar, soybean, corn ...",
+        description: "High-quality acricola commodity for export",
+        imageCard: "/assets/acricola-card-image.png",
+        imageDetail: "/assets/acricola-commodities-image.png",
+        procedures: [
+          { actor: "Buyer", text: "Sends LOI + CIS/KYC with ID (CEO/Manager)." },
+          { actor: "Seller", text: "Sends FCO to Buyer" },
+          { actor: "Buyer", text: "Signs and returns FCO with ICPO (corporate email to xxx)." },
+          { actor: "Seller", text: "Sends Draft SPA to Buyer." },
+          { actor: "Buyer", text: "Signs SPA and returns (corporate email to xxx)." },
+          { actor: "Seller", text: "Signs SPA and returns with Proforma Invoice." },
+          { actor: "Buyer", text: "Returns signed Proforma Invoice with BCL+ATV (Buyer’s bank to Seller’s bank)." },
+          { actor: "Seller", text: "Seller and Buyer sign/stamp manually, then Seller sends via DocuSign (legally binding substitute for original paper)." },
+          { actor: "Buyer", text: "Issues Financial Instrument Draft (real draft with confirming bank details) to Seller (official email)." },
+          { actor: "Third-Party Issuer SBLC", text: "0.1% upfront TT-MT103 for legal/platform fees..." }
+        ]
+      },
+      {
+        slug: "ores",
+        title: "Steel, aluminium, silver ...",
+        description: "High-quality ore commodity for export",
+        imageCard: "/assets/ore-card-image.png",
+        imageDetail: "/assets/ore-commodities-image.png",
+        procedures: [
+          { actor: "Buyer", text: "Sends LOI + CIS/KYC with ID (CEO/Manager)." },
+          { actor: "Seller", text: "Sends FCO to Buyer" },
+          { actor: "Buyer", text: "Signs and returns FCO with ICPO (corporate email to xxx)." },
+          { actor: "Seller", text: "Sends Draft SPA to Buyer." },
+          { actor: "Buyer", text: "Signs SPA and returns (corporate email to xxx)." },
+          { actor: "Seller", text: "Signs SPA and returns with Proforma Invoice." },
+          { actor: "Buyer", text: "Returns signed Proforma Invoice with BCL+ATV (Buyer’s bank to Seller’s bank)." },
+          { actor: "Seller", text: "Seller and Buyer sign/stamp manually, then Seller sends via DocuSign (legally binding substitute for original paper)." },
+          { actor: "Buyer", text: "Issues Financial Instrument Draft (real draft with confirming bank details) to Seller (official email)." },
+          { actor: "Third-Party Issuer SBLC", text: "0.1% upfront TT-MT103 for legal/platform fees..." }
+        ]
+      },
+      {
+        slug: "meat",
+        title: "Pig meat, chicken, cow ...",
+        description: "High-quality meat commodity for export",
+        imageCard: "/assets/meat-card-image.avif",
+        imageDetail: "/assets/meat-commodities-image.png",
+        procedures: [
+          { actor: "Buyer", text: "Sends LOI + CIS/KYC with ID (CEO/Manager)." },
+          { actor: "Seller", text: "Sends FCO to Buyer" },
+          { actor: "Buyer", text: "Signs and returns FCO with ICPO (corporate email to xxx)." },
+          { actor: "Seller", text: "Sends Draft SPA to Buyer." },
+          { actor: "Buyer", text: "Signs SPA and returns (corporate email to xxx)." },
+          { actor: "Seller", text: "Signs SPA and returns with Proforma Invoice." },
+          { actor: "Buyer", text: "Returns signed Proforma Invoice with BCL+ATV (Buyer’s bank to Seller’s bank)." },
+          { actor: "Seller", text: "Seller and Buyer sign/stamp manually, then Seller sends via DocuSign (legally binding substitute for original paper)." },
+          { actor: "Buyer", text: "Issues Financial Instrument Draft (real draft with confirming bank details) to Seller (official email)." },
+          { actor: "Third-Party Issuer SBLC", text: "0.1% upfront TT-MT103 for legal/platform fees..." }
+        ]
+      },
+      {
+        slug: "energy",
+        title: "Clean energy, oil, gas ...",
+        description: "High-quality energy commodity for export",
+        imageCard: "/assets/energy-card-image.png",
+        imageDetail: "/assets/energy-commodities-image.png",
+        procedures: [
+          { actor: "Buyer", text: "Sends LOI + CIS/KYC with ID (CEO/Manager)." },
+          { actor: "Seller", text: "Sends FCO to Buyer" },
+          { actor: "Buyer", text: "Signs and returns FCO with ICPO (corporate email to xxx)." },
+          { actor: "Seller", text: "Sends Draft SPA to Buyer." },
+          { actor: "Buyer", text: "Signs SPA and returns (corporate email to xxx)." },
+          { actor: "Seller", text: "Signs SPA and returns with Proforma Invoice." },
+          { actor: "Buyer", text: "Returns signed Proforma Invoice with BCL+ATV (Buyer’s bank to Seller’s bank)." },
+          { actor: "Seller", text: "Seller and Buyer sign/stamp manually, then Seller sends via DocuSign (legally binding substitute for original paper)." },
+          { actor: "Buyer", text: "Issues Financial Instrument Draft (real draft with confirming bank details) to Seller (official email)." },
+          { actor: "Third-Party Issuer SBLC", text: "0.1% upfront TT-MT103 for legal/platform fees..." }
+        ]
+      }
+    ]
   },
   FR: {
     nav_commodities: "Marchandises",
@@ -202,6 +282,85 @@ export const translations = {
     opening_title: "Heures d'ouverture",
     opening_weekdays: "Lun - Ven : 8h00 / 18h00",
     opening_saturday: "Samedi : 9h00 / 19h00",
+
+    commodities: [
+      {
+        slug: "agricola",
+        title: "Sucre, soja, maïs ...",
+        description: "Marchandises agricoles de haute qualité pour l'exportation",
+        imageCard: "/assets/acricola-card-image.png",
+        imageDetail: "/assets/acricola-commodities-image.png",
+        procedures: [
+          { actor: "Acheteur", text: "Envoie LOI + CIS/KYC avec pièce d'identité (PDG/Directeur)." },
+          { actor: "Vendeur", text: "Envoie FCO à l'Acheteur" },
+          { actor: "Acheteur", text: "Signe et retourne FCO avec ICPO (email d'entreprise à xxx)." },
+          { actor: "Vendeur", text: "Envoie projet de SPA à l'Acheteur." },
+          { actor: "Acheteur", text: "Signe le SPA et le retourne (email d'entreprise à xxx)." },
+          { actor: "Vendeur", text: "Signe le SPA et le retourne avec la facture pro forma." },
+          { actor: "Acheteur", text: "Retourne la facture pro forma signée avec BCL+ATV (banque de l'Acheteur à la banque du Vendeur)." },
+          { actor: "Vendeur", text: "Le vendeur et l'acheteur signent/tamponnent manuellement, puis le vendeur envoie via DocuSign (substitut juridiquement contraignant au papier original)." },
+          { actor: "Acheteur", text: "Émet le projet d'instrument financier (vrai projet avec coordonnées bancaires de confirmation) au vendeur (email officiel)." },
+          { actor: "Émetteur Tiers SBLC", text: "0,1% en avance TT-MT103 pour les frais juridiques/de plateforme (validité de 30 jours, renouvelable mensuellement à 0,1%). Ces frais sont déduits du paiement du premier envoi." }
+        ]
+      },
+      {
+        slug: "ores",
+        title: "Acier, aluminium, argent ...",
+        description: "Marchandises minières de haute qualité pour l'exportation",
+        imageCard: "/assets/ore-card-image.png",
+        imageDetail: "/assets/ore-commodities-image.png",
+        procedures: [
+          { actor: "Acheteur", text: "Envoie LOI + CIS/KYC avec pièce d'identité (PDG/Directeur)." },
+          { actor: "Vendeur", text: "Envoie FCO à l'Acheteur" },
+          { actor: "Acheteur", text: "Signe et retourne FCO avec ICPO (email d'entreprise à xxx)." },
+          { actor: "Vendeur", text: "Envoie projet de SPA à l'Acheteur." },
+          { actor: "Acheteur", text: "Signe le SPA et le retourne (email d'entreprise à xxx)." },
+          { actor: "Vendeur", text: "Signe le SPA et le retourne avec la facture pro forma." },
+          { actor: "Acheteur", text: "Retourne la facture pro forma signée avec BCL+ATV (banque de l'Acheteur à la banque du Vendeur)." },
+          { actor: "Vendeur", text: "Le vendeur et l'acheteur signent/tamponnent manuellement, puis le vendeur envoie via DocuSign (substitut juridiquement contraignant au papier original)." },
+          { actor: "Acheteur", text: "Émet le projet d'instrument financier (vrai projet avec coordonnées bancaires de confirmation) au vendeur (email officiel)." },
+          { actor: "Émetteur Tiers SBLC", text: "0,1% en avance TT-MT103 pour les frais juridiques/de plateforme (validité de 30 jours, renouvelable mensuellement à 0,1%). Ces frais sont déduits du paiement du premier envoi." }
+        ]
+      },
+      {
+        slug: "meat",
+        title: "Viande porcine, poulet, bœuf ...",
+        description: "Marchandises carnées de haute qualité pour l'exportation",
+        imageCard: "/assets/meat-card-image.avif",
+        imageDetail: "/assets/meat-commodities-image.png",
+        procedures: [
+          { actor: "Acheteur", text: "Envoie LOI + CIS/KYC avec pièce d'identité (PDG/Directeur)." },
+          { actor: "Vendeur", text: "Envoie FCO à l'Acheteur" },
+          { actor: "Acheteur", text: "Signe et retourne FCO avec ICPO (email d'entreprise à xxx)." },
+          { actor: "Vendeur", text: "Envoie projet de SPA à l'Acheteur." },
+          { actor: "Acheteur", text: "Signe le SPA et le retourne (email d'entreprise à xxx)." },
+          { actor: "Vendeur", text: "Signe le SPA et le retourne avec la facture pro forma." },
+          { actor: "Acheteur", text: "Retourne la facture pro forma signée avec BCL+ATV (banque de l'Acheteur à la banque du Vendeur)." },
+          { actor: "Vendeur", text: "Le vendeur et l'acheteur signent/tamponnent manuellement, puis le vendeur envoie via DocuSign (substitut juridiquement contraignant au papier original)." },
+          { actor: "Acheteur", text: "Émet le projet d'instrument financier (vrai projet avec coordonnées bancaires de confirmation) au vendeur (email officiel)." },
+          { actor: "Émetteur Tiers SBLC", text: "0,1% en avance TT-MT103 pour les frais juridiques/de plateforme (validité de 30 jours, renouvelable mensuellement à 0,1%). Ces frais sont déduits du paiement du premier envoi." }
+        ]
+      },
+      {
+        slug: "energy",
+        title: "Énergie propre, pétrole, gaz ...",
+        description: "Marchandises énergétiques de haute qualité pour l'exportation",
+        imageCard: "/assets/energy-card-image.png",
+        imageDetail: "/assets/energy-commodities-image.png",
+        procedures: [
+          { actor: "Acheteur", text: "Envoie LOI + CIS/KYC avec pièce d'identité (PDG/Directeur)." },
+          { actor: "Vendeur", text: "Envoie FCO à l'Acheteur" },
+          { actor: "Acheteur", text: "Signe et retourne FCO avec ICPO (email d'entreprise à xxx)." },
+          { actor: "Vendeur", text: "Envoie projet de SPA à l'Acheteur." },
+          { actor: "Acheteur", text: "Signe le SPA et le retourne (email d'entreprise à xxx)." },
+          { actor: "Vendeur", text: "Signe le SPA et le retourne avec la facture pro forma." },
+          { actor: "Acheteur", text: "Retourne la facture pro forma signée avec BCL+ATV (banque de l'Acheteur à la banque du Vendeur)." },
+          { actor: "Vendeur", text: "Le vendeur et l'acheteur signent/tamponnent manuellement, puis le vendeur envoie via DocuSign (substitut juridiquement contraignant au papier original)." },
+          { actor: "Acheteur", text: "Émet le projet d'instrument financier (vrai projet avec coordonnées bancaires de confirmation) au vendeur (email officiel)." },
+          { actor: "Émetteur Tiers SBLC", text: "0,1% en avance TT-MT103 pour les frais juridiques/de plateforme (validité de 30 jours, renouvelable mensuellement à 0,1%). Ces frais sont déduits du paiement du premier envoi." }
+        ]
+      }
+    ]
   },
 
   ES: {
@@ -305,5 +464,84 @@ export const translations = {
     opening_title: "Horario de atención",
     opening_weekdays: "Lun - Vie: 8:00 am / 6:00 pm",
     opening_saturday: "Sábado: 9:00 am / 7:00 pm",
+
+    commodities: [
+    {
+      slug: "agricola",
+      title: "Azúcar, soja, maíz ...",
+      description: "Mercancía agrícola de alta calidad para exportación",
+      imageCard: "/assets/acricola-card-image.png",
+      imageDetail: "/assets/acricola-commodities-image.png",
+      procedures: [
+        { "actor": "Comprador", "text": "Envía LOI + CIS/KYC con identificación (CEO/Gerente)." },
+        { "actor": "Vendedor", "text": "Envía FCO al Comprador" },
+        { "actor": "Comprador", "text": "Firma y devuelve FCO con ICPO (correo corporativo a xxx)." },
+        { "actor": "Vendedor", "text": "Envía borrador de SPA al Comprador." },
+        { "actor": "Comprador", "text": "Firma el SPA y lo devuelve (correo corporativo a xxx)." },
+        { "actor": "Vendedor", "text": "Firma el SPA y lo devuelve con factura proforma." },
+        { "actor": "Comprador", "text": "Devuelve factura proforma firmada con BCL+ATV (banco del Comprador al banco del Vendedor)." },
+        { "actor": "Vendedor", "text": "El Vendedor y el Comprador firman/sellan manualmente, luego el Vendedor envía vía DocuSign (sustituto legalmente vinculante del documento original)." },
+        { "actor": "Comprador", "text": "Emite borrador del instrumento financiero (borrador real con detalles del banco confirmante) al Vendedor (correo oficial)." },
+        { "actor": "Emisor SBLC de Terceros", "text": "0.1% por adelantado TT-MT103 para tarifas legales/de plataforma (vigencia de 30 días, renovable mensualmente al 0.1%). Esta tarifa se deduce del pago del primer envío." }
+      ]
+    },
+    {
+      slug: "ores",
+      title: "Acero, aluminio, plata ...",
+      description: "Mercancía mineral de alta calidad para exportación",
+      imageCard: "/assets/ore-card-image.png",
+      imageDetail: "/assets/ore-commodities-image.png",
+      procedures: [
+        { "actor": "Comprador", "text": "Envía LOI + CIS/KYC con identificación (CEO/Gerente)." },
+        { "actor": "Vendedor", "text": "Envía FCO al Comprador" },
+        { "actor": "Comprador", "text": "Firma y devuelve FCO con ICPO (correo corporativo a xxx)." },
+        { "actor": "Vendedor", "text": "Envía borrador de SPA al Comprador." },
+        { "actor": "Comprador", "text": "Firma el SPA y lo devuelve (correo corporativo a xxx)." },
+        { "actor": "Vendedor", "text": "Firma el SPA y lo devuelve con factura proforma." },
+        { "actor": "Comprador", "text": "Devuelve factura proforma firmada con BCL+ATV (banco del Comprador al banco del Vendedor)." },
+        { "actor": "Vendedor", "text": "El Vendedor y el Comprador firman/sellan manualmente, luego el Vendedor envía vía DocuSign (sustituto legalmente vinculante del documento original)." },
+        { "actor": "Comprador", "text": "Emite borrador del instrumento financiero (borrador real con detalles del banco confirmante) al Vendedor (correo oficial)." },
+        { "actor": "Emisor SBLC de Terceros", "text": "0.1% por adelantado TT-MT103 para tarifas legales/de plataforma (vigencia de 30 días, renovable mensualmente al 0.1%). Esta tarifa se deduce del pago del primer envío." }
+      ]
+    },
+    {
+      slug: "meat",
+      title: "Carne de cerdo, pollo, vaca ...",
+      description: "Mercancía cárnica de alta calidad para exportación",
+      imageCard: "/assets/meat-card-image.avif",
+      imageDetail: "/assets/meat-commodities-image.png",
+      procedures: [
+        { "actor": "Comprador", "text": "Envía LOI + CIS/KYC con identificación (CEO/Gerente)." },
+        { "actor": "Vendedor", "text": "Envía FCO al Comprador" },
+        { "actor": "Comprador", "text": "Firma y devuelve FCO con ICPO (correo corporativo a xxx)." },
+        { "actor": "Vendedor", "text": "Envía borrador de SPA al Comprador." },
+        { "actor": "Comprador", "text": "Firma el SPA y lo devuelve (correo corporativo a xxx)." },
+        { "actor": "Vendedor", "text": "Firma el SPA y lo devuelve con factura proforma." },
+        { "actor": "Comprador", "text": "Devuelve factura proforma firmada con BCL+ATV (banco del Comprador al banco del Vendedor)." },
+        { "actor": "Vendedor", "text": "El Vendedor y el Comprador firman/sellan manualmente, luego el Vendedor envía vía DocuSign (sustituto legalmente vinculante del documento original)." },
+        { "actor": "Comprador", "text": "Emite borrador del instrumento financiero (borrador real con detalles del banco confirmante) al Vendedor (correo oficial)." },
+        { "actor": "Emisor SBLC de Terceros", "text": "0.1% por adelantado TT-MT103 para tarifas legales/de plataforma (vigencia de 30 días, renovable mensualmente al 0.1%). Esta tarifa se deduce del pago del primer envío." }
+      ]
+    },
+    {
+      "slug": "energy",
+      title: "Energía limpia, petróleo, gas ...",
+      description: "Mercancía energética de alta calidad para exportación",
+      imageCard: "/assets/energy-card-image.png",
+      imageDetail: "/assets/energy-commodities-image.png",
+      procedures: [
+        { "actor": "Comprador", "text": "Envía LOI + CIS/KYC con identificación (CEO/Gerente)." },
+        { "actor": "Vendedor", "text": "Envía FCO al Comprador" },
+        { "actor": "Comprador", "text": "Firma y devuelve FCO con ICPO (correo corporativo a xxx)." },
+        { "actor": "Vendedor", "text": "Envía borrador de SPA al Comprador." },
+        { "actor": "Comprador", "text": "Firma el SPA y lo devuelve (correo corporativo a xxx)." },
+        { "actor": "Vendedor", "text": "Firma el SPA y lo devuelve con factura proforma." },
+        { "actor": "Comprador", "text": "Devuelve factura proforma firmada con BCL+ATV (banco del Comprador al banco del Vendedor)." },
+        { "actor": "Vendedor", "text": "El Vendedor y el Comprador firman/sellan manualmente, luego el Vendedor envía vía DocuSign (sustituto legalmente vinculante del documento original)." },
+        { "actor": "Comprador", "text": "Emite borrador del instrumento financiero (borrador real con detalles del banco confirmante) al Vendedor (correo oficial)." },
+        { "actor": "Emisor SBLC de Terceros", "text": "0.1% por adelantado TT-MT103 para tarifas legales/de plataforma (vigencia de 30 días, renovable mensualmente al 0.1%). Esta tarifa se deduce del pago del primer envío." }
+      ]
+    }
+  ]
   },
 };

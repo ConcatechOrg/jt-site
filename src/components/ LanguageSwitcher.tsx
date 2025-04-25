@@ -37,10 +37,10 @@ const LanguageSwitcher = () => {
       </button>
 
       {isLanguageOpen && (
-        <div className="absolute right-0 mt-2 bg-white text-black shadow-lg rounded-md z-50 w-40">
+        <div className="absolute right-0 mt-2 bg-transparent text-gold shadow-lg rounded-md z-50 w-40">
           <ul className="flex flex-col divide-y divide-gray-200">
             <li
-              className="px-4 py-2 hover:bg-gray-100 flex items-center gap-2 cursor-pointer"
+              className="px-4 py-2 hover:bg-softWhite flex items-center gap-2 cursor-pointer"
               onClick={() => {
                 changeLanguage("FR");
                 setIsLanguageOpen(false);
@@ -49,7 +49,7 @@ const LanguageSwitcher = () => {
               🇫🇷 Français
             </li>
             <li
-              className="px-4 py-2 hover:bg-gray-100 flex items-center gap-2 cursor-pointer"
+              className="px-4 py-2 hover:bg-softWhite flex items-center gap-2 cursor-pointer"
               onClick={() => {
                 changeLanguage("EN");
                 setIsLanguageOpen(false);
@@ -58,7 +58,7 @@ const LanguageSwitcher = () => {
               🇬🇧 English
             </li>
             <li
-              className="px-4 py-2 hover:bg-gray-100 flex items-center gap-2 cursor-pointer"
+              className="px-4 py-2 hover:bg-softWhite flex items-center gap-2 cursor-pointer"
               onClick={() => {
                 changeLanguage("ES");
                 setIsLanguageOpen(false);
