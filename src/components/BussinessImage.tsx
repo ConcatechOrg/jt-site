@@ -6,7 +6,7 @@ const BussinessImage = () => {
   return (
     <>
       <div
-        className="relative bg-cover bg-center w-full aspect-[509/77]"
+        className="relative bg-cover bg-center w-full aspect-[509/137]"
         style={{
           backgroundImage: `url('/assets/bussiness-image.jpg')`,
         }}
