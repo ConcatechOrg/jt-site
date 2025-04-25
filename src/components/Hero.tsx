@@ -8,7 +8,7 @@ const Hero = () => {
       <div
         className="relative bg-cover bg-center w-full aspect-[209/197]  md:aspect-[509/177]"
         style={{
-          backgroundImage: `url('/assets/home-bg.jpg')`,
+          backgroundImage: `url('/assets/home-bg.avif')`,
         }}
       >
         <div className="absolute inset-0 flex items-end"> 

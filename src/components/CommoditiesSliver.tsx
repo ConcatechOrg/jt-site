@@ -32,7 +32,7 @@ const CommoditiesSliver = () => {
       slug: "meat",
       title: translations.commodities_meat_title,
       description: translations.commodities_meat_description,
-      image: "/assets/meat-card-image.png",
+      image: "/assets/meat-card-image.avif",
     },
     {
       slug: "ores",
