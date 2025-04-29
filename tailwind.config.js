@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
@@ -17,6 +17,7 @@ module.exports = {
     fontFamily: {
       bai: ['"Bai Jamjuree"', 'sans-serif'],
       shoulders: ['"Big Shoulders Text"', 'sans-serif'],
+      roboto: ['"Roboto"', 'sans-serif'],
     },
     extend: {
       fontSize: {
@@ -34,6 +35,9 @@ module.exports = {
         'shoulders-20-400': ['1.25rem', { lineHeight: '2rem', letterSpacing: '0%' }],
         'shoulders-20-700': ['1.25rem', { lineHeight: '2rem', letterSpacing: '0%' }],
         'shoulders-16-400': ['1rem', { lineHeight: '1rem', letterSpacing: '0%' }],
+
+        'roboto-24-400': ['4.5rem', { lineHeight: '1.5rem', letterSpacing: '0%' }], // 24px peso 400
+        'roboto-24-700': ['4.5rem', { lineHeight: '1.5rem', letterSpacing: '0%' }], // 24px peso 700
       },
       fontWeight: {
         regular: '400',

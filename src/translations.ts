@@ -6,8 +6,8 @@ export const translations = {
 
     hero_title_line1: "Conecting",
     hero_title_line2_part1: "the world to",
-    hero_title_line2_part2: "essential",
-    hero_title_emphasized: "raw materials",
+    hero_title_line2_part2: "essential raw",
+    hero_title_emphasized: "materials",
 
     hero_paragraph_line1: "We facilitate direct connections",
     hero_paragraph_line2: "between buyers and product owners,",

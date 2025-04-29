@@ -38,7 +38,7 @@ useEffect(() => {
         <div>
           <BussinessImage />
         </div>
-        <div className="pb-[0.5rem] md:pb-[5.56rem]">
+        <div className="pb-[0.5rem]">
           <CommoditiesSliver />
         </div>
         <div>

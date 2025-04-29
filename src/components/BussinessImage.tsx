@@ -6,12 +6,12 @@ const BussinessImage = () => {
   return (
     <>
       <div
-        className="relative bg-cover bg-center w-full aspect-[509/137]"
+        className="relative bg-cover bg-center w-full aspect-[509/137] max-h-[250px]"
         style={{
           backgroundImage: `url('/assets/bussiness-image.jpg')`,
         }}
       ></div>
-      <div className="flex flex-col items-center justify-center bg-white py-[1.5rem]">
+      <div className="flex flex-col items-center justify-center bg-white py-[1.5rem] text-darkBlue">
         <p className="font-shoulders font-regular text-shoulders-20-400 text-center">
           {translations.business_image_line1}
         </p>
