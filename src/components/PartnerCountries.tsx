@@ -27,7 +27,7 @@ const PartnerCountries = () => {
     {
       title: translations.partner_usa_title,
       description: translations.partner_usa_description,
-      image: "/assets/usa.png",
+      image: "/assets/usa2.png",
     },
 
     {
