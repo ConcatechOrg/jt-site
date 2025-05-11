@@ -4,14 +4,14 @@ export const translations = {
     nav_contact: "Contact Us",
     nav_faq: "FAQ",
 
-    hero_title_line1: "Conecting",
+    hero_title_line1: "Connecting",
     hero_title_line2_part1: "the world to",
     hero_title_line2_part2: "essential raw",
     hero_title_emphasized: "materials",
 
     hero_paragraph_line1: "We facilitate direct connections",
     hero_paragraph_line2: "between buyers and product owners,",
-    hero_paragraph_line3: "ensuring a responsible supply of essential resources.",
+    hero_paragraph_line3: "ensuring the responsible supply of essential resources.",
 
     whatsapp_button: "Contact via Whatsapp",
 
@@ -60,16 +60,23 @@ export const translations = {
     partner_section_title: "Partner Countries",
 
     partner_brazil_title: "Brazil",
-    partner_brazil_description: "Sugar, rice, soybeans, corn",
+    partner_brazil_description: "Sugar, rice, soybeans, corn and chicken",
 
-    partner_mexico_title: "Mexico",
-    partner_mexico_description: "Beans, corn, and avocados",
+    partner_africa_title: "Africa",
+    partner_africa_description: "Ores and Minerals",
 
-    partner_china_title: "China",
-    partner_china_description: "Rice, soybeans, corn, and chicken",
+    partner_chile_title: "Chile",
+    partner_chile_description: "Ores and Minerals",
 
     partner_vietnam_title: "Vietnam",
-    partner_vietnam_description: "Rice, soybeans, corn, and chicken",
+    partner_vietnam_description: "Rice",
+
+    partner_usa_title: "USA",
+    partner_usa_description: "Energy (oil)",
+
+    partner_holande_title: "Netherlands",
+    partner_holande_description: "Energy (oil)",
+
 
     faq_title: "Frequently asked questions",
 
@@ -242,16 +249,22 @@ export const translations = {
     partner_section_title: "Pays partenaires",
 
     partner_brazil_title: "Brésil",
-    partner_brazil_description: "Sucre, riz, soja, maïs",
+    partner_brazil_description: "Sucre, riz, soja, maïs et poulet",
 
-    partner_mexico_title: "Mexique",
-    partner_mexico_description: "Haricots, maïs et avocats",
+    partner_africa_title: "Afrique",
+    partner_africa_description: "Minerais et métaux",
 
-    partner_china_title: "Chine",
-    partner_china_description: "Riz, soja, maïs et poulet",
+    partner_chile_title: "Chile",
+    partner_chile_description: "Mineraux et métaux",
 
     partner_vietnam_title: "Vietnam",
-    partner_vietnam_description: "Riz, soja, maïs et poulet",
+    partner_vietnam_description: "Riz",
+
+    partner_usa_title: "USA",
+    partner_usa_description: "Énergie (pétrole)",
+
+    partner_holande_title: "Holande",
+    partner_holande_description: "Énergie (pétrole)",
 
     faq_title: "Questions fréquemment posées",
 
@@ -364,7 +377,7 @@ export const translations = {
   },
 
   ES: {
-    nav_commodities: "Mercancías",
+    nav_commodities: "Productos",
     nav_contact: "Contáctenos",
     nav_faq: "FAQ",
 
@@ -383,22 +396,22 @@ export const translations = {
       {
         title: "Diseño ecológico",
         description:
-          "El diseño ecológico está en el centro de nuestra estrategia. Estamos comprometidos con mejorar nuestras ofertas y ampliar nuestras capacidades de diseño y producción.",
+          "El diseño ecológico es el núcleo de nuestra estrategia. Estamos comprometidos con mejorar nuestras ofertas y ampliar nuestras capacidades de diseño y producción.",
       },
       {
         title: "Soporte 24/7",
         description:
-          "Estamos dedicados a proporcionar el más alto nivel de atención al cliente, asegurando calidad y excelencia en todo lo que hacemos.",
+          "Estamos comprometidos en ofrecer el mejor servicio al cliente, garantizando calidad y excelencia en todo lo que hacemos.",
       },
       {
         title: "Funcionalidad multilingüe",
         description:
-          "Con nuestra funcionalidad multilingüe, puede comunicarse eficazmente a través de las fronteras y ampliar su impacto global.",
+          "Con nuestra capacidad multilingüe, puede comunicarse eficazmente a través de las fronteras y ampliar su impacto global.",
       },
       {
         title: "Tecnología avanzada",
         description:
-          "Siempre innovando, nuestro equipo desarrolla tecnología de vanguardia. Viva el futuro – contáctenos.",
+          "Siempre innovando, nuestro equipo desarrolla tecnología de vanguardia. Descubra el futuro – contáctenos.",
       },
     ],
 
@@ -424,16 +437,23 @@ export const translations = {
     partner_section_title: "Países socios",
 
     partner_brazil_title: "Brasil",
-    partner_brazil_description: "Azúcar, arroz, soja, maíz",
+    partner_brazil_description: "Azúcar, arroz, soja, maíz y pollo",
 
-    partner_mexico_title: "México",
-    partner_mexico_description: "Frijoles, maíz y aguacates",
+    partner_africa_title: "África",
+    partner_africa_description: "Minerales y Metales",
 
-    partner_china_title: "China",
-    partner_china_description: "Arroz, soja, maíz y pollo",
+    partner_chile_title: "Chile",
+    partner_chile_description: "Minerales y Metales",
 
     partner_vietnam_title: "Vietnam",
-    partner_vietnam_description: "Arroz, soja, maíz y pollo",
+    partner_vietnam_description: "Arroz",
+
+    partner_usa_title: "USA",
+    partner_usa_description: "Energía (petróleo)",
+
+    partner_holande_title: "Países Bajos",
+    partner_holande_description: "Energía (petróleo)",
+
 
     faq_title: "Preguntas frecuentes",
 
@@ -469,7 +489,7 @@ export const translations = {
     {
       slug: "agricola",
       title: "Azúcar, soja, maíz ...",
-      description: "Mercancía agrícola de alta calidad para exportación",
+      description: "Producto agrícola de alta calidad para exportación",
       imageCard: "/assets/acricola-card-image.png",
       imageDetail: "/assets/acricola-commodities-image.png",
       procedures: [
@@ -488,7 +508,7 @@ export const translations = {
     {
       slug: "ores",
       title: "Acero, aluminio, plata ...",
-      description: "Mercancía mineral de alta calidad para exportación",
+      description: "Producto mineral de alta calidad para exportación",
       imageCard: "/assets/ore-card-image.png",
       imageDetail: "/assets/ore-commodities-image.png",
       procedures: [
@@ -507,7 +527,7 @@ export const translations = {
     {
       slug: "meat",
       title: "Carne de cerdo, pollo, vaca ...",
-      description: "Mercancía cárnica de alta calidad para exportación",
+      description: "Producto cárnica de alta calidad para exportación",
       imageCard: "/assets/meat-card-image.avif",
       imageDetail: "/assets/meat-commodities-image.png",
       procedures: [
@@ -526,7 +546,7 @@ export const translations = {
     {
       "slug": "energy",
       title: "Energía limpia, petróleo, gas ...",
-      description: "Mercancía energética de alta calidad para exportación",
+      description: "Producto energética de alta calidad para exportación",
       imageCard: "/assets/energy-card-image.png",
       imageDetail: "/assets/energy-commodities-image.png",
       procedures: [

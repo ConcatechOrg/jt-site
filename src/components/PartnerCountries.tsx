@@ -11,21 +11,31 @@ const PartnerCountries = () => {
       description: translations.partner_brazil_description,
       image: "/assets/brazil.png",
     },
-    {
-      title: translations.partner_mexico_title,
-      description: translations.partner_mexico_description,
-      image: "/assets/mexico.png",
+    { title: translations.partner_chile_title,
+      description: translations.partner_chile_description,
+      image: "/assets/chilie.png"
     },
-    {
-      title: translations.partner_china_title,
-      description: translations.partner_china_description,
-      image: "/assets/china.png",
+    { title: translations.partner_africa_title,
+      description: translations.partner_africa_description,
+      image: "/assets/africa.png"
     },
     {
       title: translations.partner_vietnam_title,
       description: translations.partner_vietnam_description,
       image: "/assets/vietnam.png",
     },
+    {
+      title: translations.partner_usa_title,
+      description: translations.partner_usa_description,
+      image: "/assets/usa.png",
+    },
+
+    {
+      title: translations.partner_holande_title,
+      description: translations.partner_holande_description,
+      image: "/assets/holanda.png",
+    }
+
   ];
 
   return (

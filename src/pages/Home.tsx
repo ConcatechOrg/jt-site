@@ -8,7 +8,7 @@ import Hero from "../components/Hero";
 import OpeningHours from "../components/OpeningHours";
 import PartnerCountries from "../components/PartnerCountries";
 import SliverCard from "../components/SliverCard";
-import WhatsappButton from "../components/WhatsappButton";
+// import WhatsappButton from "../components/WhatsappButton";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -30,7 +30,7 @@ useEffect(() => {
       <section className="bg-softWhite">
         <Hero />
         <div className="flex justify-center items-center py-8">
-          <WhatsappButton />
+          {/* <WhatsappButton /> */}
         </div>
         <div>
           <SliverCard />
